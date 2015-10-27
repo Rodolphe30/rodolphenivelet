@@ -1,0 +1,39 @@
+.intro{
+  .site-header{
+    opacity: 0;
+  }
+  .intro-loading{
+    opacity: 1;
+  }
+  .cover-section{
+    .cover-background{
+      .polygroup{
+        transform: scale(0,0);
+        opacity: 0;
+      }
+      .hexadeco{
+        stroke-dasharray: 0 0 0 1000;
+        &:nth-child( 1){stroke-dasharray: 0 838 0 1000}
+        &:nth-child( 2){stroke-dasharray: 0 838 0 1000}
+        &:nth-child( 3){stroke-dasharray: 0 838 0 1000}
+        &:nth-child( 4){stroke-dasharray: 0 838 0 1000}
+        &:nth-child( 5){stroke-dasharray: 0 838 0 1000}
+        &:nth-child( 6){stroke-dasharray: 0 838 0 1000}
+        &:nth-child( 7){stroke-dasharray: 0 838 0 1000}
+        &:nth-child( 8){stroke-dasharray: 0 838 0 1000}
+        &:nth-child( 9){stroke-dasharray: 0 838 0 1000}
+        &:nth-child(10){stroke-dasharray: 0 838 0 1000}
+        &:nth-child(11){stroke-dasharray: 0 838 0 1000}
+      }
+    }
+  }
+  .cover-section-content{
+    opacity: 0;
+    transform: translateY(-45%);
+  }
+  .aboutme-section{
+    .my-face-container{
+      opacity: 0;
+    }
+  }
+}

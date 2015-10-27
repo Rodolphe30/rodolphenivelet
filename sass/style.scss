@@ -1,0 +1,70 @@
+@import 'values';
+// Import Bootstrap Compass integration
+@import "bootstrap-compass";
+// Import custom Bootstrap variables
+@import "bootstrap-variables";
+// Import Bootstrap for Sass
+@import "bootstrap";
+@import 'mq';
+
+@import 'animations';
+
+
+
+html,body{
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing:antialiased;
+  font-smoothing:antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 18px;
+  line-height: 1.4;
+  font-weight: 300;
+}
+
+svg{
+  overflow: visible!important;
+}
+
+.button{
+  text-transform: uppercase;
+  font-size: 14px;
+  border:2px solid $black;
+  display: inline-block;
+  font-weight: 700;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: 0.2s;
+  &:hover,&:active{
+    color: #FFF;
+    background-color: $black;
+    border-color: transparent;
+  }
+}
+
+.hundredsection{
+  min-height: 500px;
+}
+
+.section-title{
+  font-weight: 700;
+  margin-top: 0;
+  font-size: 36px;
+  text-transform: uppercase;
+  letter-spacing: -0.03em;
+}
+
+svg.mask{
+  height: 0;
+  width: 0;
+  overflow: hidden !important;
+}
+
+
+@import 'header';
+@import 'cover';
+@import 'loader';
+@import 'sidenav';
+@import 'intro';
+@import 'about';
+@import 'skills';
+

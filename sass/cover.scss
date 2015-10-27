@@ -1,0 +1,170 @@
+.cover-section{
+  // background-position: center center;
+  // background-repeat: no-repeat;
+  // background-size: 1244px 550px;
+  // background-image: url(../images/backgroundnew-site.png);
+  position: relative;
+  overflow: hidden;
+  .cover-background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    .polygroup{
+      transition: 1s ease 1.5s;
+      transform: scale(1,1);
+      opacity: 1;
+      transform-origin: 50% 50%;
+    }
+    .hexadeco{
+      stroke: $light;
+      stroke-width: 2px;
+      fill:transparent;
+      transform: translate(0,0);
+      stroke-dasharray: 0 0 835 1000;
+      opacity: 1;
+      transition-duration: 10s;
+      transition-timing-function: linear;
+      transform-origin: 50% 50%;
+      &.center{
+        fill: $light;
+      }
+      &:nth-child( 1){transition-delay:0.1s;}
+      &:nth-child( 2){transition-delay:0.2s;}
+      &:nth-child( 3){transition-delay:0.3s;}
+      &:nth-child( 4){transition-delay:0.4s;}
+      &:nth-child( 5){transition-delay:0.5s;}
+      &:nth-child( 6){transition-delay:0.6s;}
+      &:nth-child( 7){transition-delay:0.7s;}
+      &:nth-child( 8){transition-delay:0.8s;}
+      &:nth-child( 9){transition-delay:0.9s;}
+      &:nth-child(10){transition-delay:1s;}
+      &:nth-child(11){transition-delay:1.1s;}
+      &:nth-child(12){transition-delay:1.2s;}
+      &:nth-child(13){transition-delay:1.3s;}
+      &:nth-child(14){transition-delay:1.4s;}
+      &:nth-child(15){transition-delay:1.5s;}
+      &:nth-child(16){transition-delay:1.6s;}
+      &:nth-child(17){transition-delay:1.7s;}
+      &:nth-child(18){transition-delay:1.8s;}
+      &:nth-child(19){transition-delay:1.9s;}
+      &:nth-child(20){transition-delay:2s;}
+      &:nth-child(21){transition-delay:2.1s;}
+      &:nth-child(22){transition-delay:2.2s;}
+    }
+    .coolstuff-wrapper{
+      opacity: 1;
+      animation-name: coolanimationopacity;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+      animation-delay: 3s;
+      animation-duration: 10s;
+      .coolstuff{
+        fill: transparent;
+        stroke: $black;
+        stroke-width:5px;
+        stroke-dasharray: 0 0 0 1000;
+        stroke-linecap: round;
+        animation-name: coolanimations;
+        animation-duration: 4s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+      }
+      &.n1{
+        animation-delay: 3s;
+        animation-duration: 6s;
+        .coolstuff{
+          animation-delay: 10s;
+        }
+      }
+      &.n2{
+        animation-delay: 2s;
+        animation-duration: 5s;
+        .coolstuff{
+          animation-delay: 8s;
+        }
+      }
+      &.n3{
+        animation-delay: 4s;
+        animation-duration: 10s;
+        .coolstuff{
+          animation-delay: 9s;
+        }
+      }
+      &.n4{
+        animation-delay: 7s;
+        animation-duration: 7s;
+        .coolstuff{
+          animation-delay: 11s;
+          animation-direction:reverse;
+        }
+      }
+      &.n5{
+        animation-delay: 3s;
+        animation-duration: 4s;
+        .coolstuff{
+          animation-delay: 12s;
+          animation-direction:reverse;
+        }
+      }
+      &.n6{
+        animation-delay: 7s;
+        animation-duration: 14s;
+        .coolstuff{
+          animation-delay: 5s;
+          animation-direction: reverse;
+        }
+      }
+    }
+  }
+  .cover-section-content{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    opacity: 1;
+    transform: translateY(-50%);
+    transition: 1s ease 2s;
+    margin-top: -20px;
+  }
+  .portfolio-link{
+    
+  }
+  .cover-section-quote{
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    &::before,&::after{
+      content: '"';
+    }
+  }
+  .arrowdown{
+    position: absolute;
+    left: 50%;
+    margin-left: -17px;
+    bottom: 30px;
+    width: 34px;
+    cursor: pointer;
+    .arrowdown-arrow{
+      animation: arrowbounce 1s infinite 8s;
+      fill: transparent;
+      stroke: $black;
+      stroke-width: 2px;
+    }
+    .hexagone-in{
+      fill: #fff;
+      stroke: $black;
+      stroke-width: 2px;
+      &.animated{
+        transform-origin: 50% 50%;
+        animation: rotation 1s;
+        animation-fill-mode: forwards;
+      }
+    }
+  }
+}
