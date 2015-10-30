@@ -62,29 +62,33 @@
 				</svg>
 				<h3 class="nav-title">Navigation</h3>
 				<svg class="hexagone nav-hexa" data-ecart="4">
-					<g class="">
-						<polygon class="hexagone-in" data-hor="-0.25" data-ver="0" data-width="80" />
-						<text text-anchor="middle" x="78" y="80">Intro</text>
+					<g class="scrollto cover" data-scrollto="#cover">
+						<polygon class="hexagone-in" data-hor="-0.25" data-ver="-3" data-width="80" />
+						<text text-anchor="middle" x="78" y="83">Intro</text>
 					</g>
-					<g class="">
-						<polygon class="hexagone-in" data-hor="0.25" data-ver="1.5" data-width="80" />
-						<text text-anchor="middle" y="132">
+					<g class="scrollto about" data-scrollto="#about">
+						<polygon class="hexagone-in" data-hor="0.25" data-ver="-1.5" data-width="80" />
+						<text text-anchor="middle" y="135">
 						    <tspan x="120" dy="1.2em">About</tspan>
 						    <tspan x="120" dy="1.2em">Me</tspan>
 						</text>
 					</g>
-					<g class="">
-						<polygon class="hexagone-in" data-hor="-0.25" data-ver="3" data-width="80" />
-						<text text-anchor="middle" x="78" y="225">Skills</text>
+					<g class="scrollto skills" data-scrollto="#skills">
+						<polygon class="hexagone-in" data-hor="-0.25" data-ver="0" data-width="80" />
+						<text text-anchor="middle" x="78" y="228">Skills</text>
 					</g>
-					<g class="">
-						<polygon class="hexagone-in" data-hor="0.25" data-ver="4.5" data-width="80" />
-						<text text-anchor="middle" x="120" y="297">Portfolio</text>
+					<g class="scrollto portfolio" data-scrollto="#portfolio">
+						<polygon class="hexagone-in" data-hor="0.25" data-ver="1.5" data-width="80" />
+						<text text-anchor="middle" x="120" y="300">Portfolio</text>
+					</g>
+					<g class="scrollto experience" data-scrollto="#experience">
+						<polygon class="hexagone-in" data-hor="-0.25" data-ver="3" data-width="80" />
+						<text text-anchor="middle" x="78" y="375">Experience</text>
 					</g>
 				</svg>
 			</nav>
 		</div>
-		<section class="cover-section hundredsection">
+		<section class="cover-section hundredsection scroll-section" id="cover">
 			<svg class="cover-background hexagone" data-ecart="6">
 				<polygon class="hexagone-in hexadeco" data-hor="-1" data-ver="-1" data-width="240" />
 				<polygon class="hexagone-in hexadeco" data-hor="1" data-ver="1" data-width="240" />
@@ -135,9 +139,9 @@
 			</svg>
 			<div class="cover-section-content">
 				<div class="cover-section-quote">Most of a good program is done on paper,<br/>the rest is formality</div>
-				<div class="portfolio-link button">View my portfolio</div>
+				<div class="portfolio-link button scrollto" data-scrollto="#portfolio">View my portfolio</div>
 			</div>
-			<svg class="arrowdown hexagone" data-solohexa="1">
+			<svg class="arrowdown hexagone scrollto" data-solohexa="1" data-scrollto="#about">
 				<polygon class="hexagone-in" />
 				<g class="arrowdown-arrow">
 					<path d="M11 23 L17 27 L23 23"/>
@@ -145,7 +149,7 @@
 				</g>
 			</svg>
 		</section>
-		<section class="aboutme-section before-section hundredsection">
+		<section class="aboutme-section before-section hundredsection scroll-section" id="about">
 			<div class="my-face-container">
 				<svg class="myphoto hexagone my-face" data-ecart="1">
 					<g class="content-container right">
@@ -208,11 +212,8 @@
 				</div>
 			</div>
 		</section>
-		<section class="skills-section hundredsection before-section">
+		<section class="skills-section hundredsection before-section scroll-section" id="skills">
 			<svg class="hexagone skillssvg" data-ecart="12">
-				<filter id="grayscale">
-					<feColorMatrix type="saturate" values="0"/>
-				</filter>
 				<defs>
 					<clipPath id="titlemask">
 						<polygon class="skills-separator"/>
@@ -220,96 +221,248 @@
 				</defs>
 
 				<g class="design">
-					<g class="skill-single">	
+					<g class="skill-single" data-skill="photoshop">	
 						<polygon class="hexagone-in hexaskill" data-hor="1" data-ver="-1.5" data-width="100" stroke-dasharray="0 0 348 10000" stroke="#7cbaf7"/>
 						<image class="hexaskill-image" xlink:href="images/skills/photoshop.png"/>
 					</g>
-					<g class="skill-single">	
+					<g class="skill-single" data-skill="illustrator">	
 						<polygon class="hexagone-in hexaskill" data-hor="1.5" data-ver="-0" data-width="100" stroke-dasharray="0 0 290 10000" stroke="#fca41e"/>
 						<image class="hexaskill-image" xlink:href="images/skills/illustrator.png"/>
 					</g>
-					<g class="skill-single">	
-						<polygon class="hexagone-in hexaskill" data-hor="2" data-ver="-1.5" data-width="100" stroke-dasharray="0 0 290 10000" stroke="#86e503"/>
-						<image class="hexaskill-image" xlink:href="images/skills/dreamweaver.png"/>
+					<g class="skill-single" data-skill="seo">	
+						<polygon class="hexagone-in hexaskill" data-hor="5" data-ver="-1.5" data-width="100" stroke-dasharray="0 0 290 10000" stroke="#ff5500"/>
+						<image class="hexaskill-image" xlink:href="images/skills/seo.png"/>
 					</g>
-					<g class="skill-single">	
+					<g class="skill-single" data-skill="aftereffect">	
 						<polygon class="hexagone-in hexaskill" data-hor="2.5" data-ver="-0" data-width="100" stroke-dasharray="0 0 232 10000" stroke="#c07efc"/>
 						<image class="hexaskill-image" xlink:href="images/skills/aftereffect.png"/>
 					</g>
-					<g class="skill-single">	
+					<g class="skill-single" data-skill="photo">	
 						<polygon class="hexagone-in hexaskill" data-hor="3" data-ver="-1.5" data-width="100" stroke-dasharray="0 0 290 10000" stroke="#000"/>
 						<image class="hexaskill-image" xlink:href="images/skills/photo.png"/>
 					</g>
-					<g class="skill-single">	
+					<g class="skill-single" data-skill="premiere">	
 						<polygon class="hexagone-in hexaskill" data-hor="1.5" data-ver="-3" data-width="100" stroke-dasharray="0 0 290 10000" stroke="#d855fe"/>
 						<image class="hexaskill-image" xlink:href="images/skills/premiere.png"/>
 					</g>
-					<g class="skill-single">	
+					<g class="skill-single" data-skill="github">	
 						<polygon class="hexagone-in hexaskill" data-hor="4" data-ver="1.5" data-width="100" stroke-dasharray="0 0 232 10000" stroke="#000"/>
 						<image class="hexaskill-image" xlink:href="images/skills/github.png"/>
 					</g>
-					<g class="skill-single">	
+					<g class="skill-single" data-skill="responsive">	
 						<polygon class="hexagone-in hexaskill" data-hor="5" data-ver="1.5" data-width="100" stroke-dasharray="0 0 348 10000" stroke="#414141"/>
 						<image class="hexaskill-image" xlink:href="images/skills/responsive.png"/>
 					</g>
-					<g class="skill-single">	
+					<g class="skill-single" data-skill="agile">	
 						<polygon class="hexagone-in hexaskill" data-hor="4.5" data-ver="0" data-width="100" stroke-dasharray="0 0 290 10000" stroke="#008bcb"/>
 						<image class="hexaskill-image" xlink:href="images/skills/agile.png"/>
 					</g>
-					<text class="skillstitle designtitle section-title">Design / workflow</text>
-					<text class="skillstitle progtitle section-title" text-anchor="end">Programmation</text>
 				</g>
 				<g class="programation">	
 					<polygon class="skills-separator"/>
-					<g class="skill-single">	
+					<g class="skill-single" data-skill="angular">	
 						<polygon class="hexagone-in hexaskill" data-hor="-1" data-ver="1.5" data-width="100" stroke-dasharray="0 0 232 10000" stroke="#d43536"/>
 						<image class="hexaskill-image" xlink:href="images/skills/angular.png"/>
 					</g>
-					<g class="skill-single">	
+					<g class="skill-single" data-skill="jquery">	
 						<polygon class="hexagone-in hexaskill" data-hor="-1.5" data-ver="0" data-width="100" stroke-dasharray="0 0 348 10000" stroke="#0868ab"/>
 						<image class="hexaskill-image" xlink:href="images/skills/jquery.png"/>
 					</g>
-					<g class="skill-single">	
+					<g class="skill-single" data-skill="gulp">	
 						<polygon class="hexagone-in hexaskill" data-hor="-2" data-ver="1.5" data-width="100" stroke-dasharray="0 0 174 10000" stroke="#d14442"/>
 						<image class="hexaskill-image" xlink:href="images/skills/gulp.png"/>
 					</g>
-					<g class="skill-single">	
+					<g class="skill-single" data-skill="bootstrap">	
 						<polygon class="hexagone-in hexaskill" data-hor="-3" data-ver="-1.5" data-width="100" stroke-dasharray="0 0 348 10000" stroke="#3b1a44"/>
 						<image class="hexaskill-image" xlink:href="images/skills/bootstrap.png"/>
 					</g>
-					<g class="skill-single">	
+					<g class="skill-single" data-skill="js">	
 						<polygon class="hexagone-in hexaskill" data-hor="-2.5" data-ver="0" data-width="100" stroke-dasharray="0 0 290 10000" stroke="#f0c800"/>
 						<image class="hexaskill-image" xlink:href="images/skills/js.png"/>
 					</g>
-					<g class="skill-single">	
+					<g class="skill-single" data-skill="css">	
 						<polygon class="hexagone-in hexaskill" data-hor="-3" data-ver="1.5" data-width="100" stroke-dasharray="0 0 348 10000" stroke="#0770b8"/>
 						<image class="hexaskill-image" xlink:href="images/skills/css.png"/>
 					</g>
-					<g class="skill-single">	
+					<g class="skill-single" data-skill="ajax">	
 						<polygon class="hexagone-in hexaskill" data-hor="-1.5" data-ver="3" data-width="100" stroke-dasharray="0 0 174 10000" stroke="#0273bb"/>
 						<image class="hexaskill-image" xlink:href="images/skills/ajax.png"/>
 					</g>
-					<g class="skill-single">	
+					<g class="skill-single" data-skill="html">	
 						<polygon class="hexagone-in hexaskill" data-hor="-3.5" data-ver="0" data-width="100" stroke-dasharray="0 0 348 10000" stroke="#e44d26"/>
 						<image class="hexaskill-image" xlink:href="images/skills/html.png"/>
 					</g>
-					<g class="skill-single">	
+					<g class="skill-single" data-skill="sass">	
 						<polygon class="hexagone-in hexaskill" data-hor="-4" data-ver="1.5" data-width="100" stroke-dasharray="0 0 290 10000" stroke="#cc6699"/>
 						<image class="hexaskill-image" xlink:href="images/skills/sass.png"/>
 					</g>
-					<g class="skill-single">	
+					<g class="skill-single" data-skill="php">	
 						<polygon class="hexagone-in hexaskill" data-hor="-5" data-ver="-1.5" data-width="100" stroke-dasharray="0 0 174 10000" stroke="#6081ba"/>
 						<image class="hexaskill-image" xlink:href="images/skills/php.png"/>
 					</g>
-					<g class="skill-single">	
+					<g class="skill-single" data-skill="svg">	
 						<polygon class="hexagone-in hexaskill" data-hor="-4.5" data-ver="0" data-width="100" stroke-dasharray="0 0 232 10000" stroke="#7f7f7f"/>
 						<image class="hexaskill-image" xlink:href="images/skills/svg.png"/>
 					</g>
-					<text class="skillstitle designtitle section-title" clip-path="url(#titlemask)">Design / workflow</text>
-					<text class="skillstitle progtitle section-title" text-anchor="end" clip-path="url(#titlemask)">Programmation</text>
 				</g>
+				<polygon class="mask-right"/>
+				<polygon class="mask-left"/>
+				<text class="skillstitle designtitle section-title black">Design / workflow</text>
+				<text class="skillstitle progtitle section-title black" text-anchor="end">Programmation</text>
+				<text class="skillstitle designtitle section-title white" clip-path="url(#titlemask)">Design / workflow</text>
+				<text class="skillstitle progtitle section-title white" text-anchor="end" clip-path="url(#titlemask)">Programmation</text>
 			</svg>
+			<div class="skill-description desc-left">
+				<h2 class="section-title skill-description-title">
+					Angular
+				</h2>
+				<p class="skill-description-level-style">Level: <span class="skill-description-level">Expert</span></p>
+				<p class="skill-description-text">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</p>
+			</div>
+			<div class="skill-description desc-right">
+				<h2 class="section-title skill-description-title">
+					Angular
+				</h2>
+				<p class="skill-description-level-style">Level: <span class="skill-description-level">Expert</span></p>
+				<p class="skill-description-text">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</p>
+			</div>
 		</section>
+		<section class="portfolio-section before-section scroll-section" id="portfolio">
+			<h2 class="section-title">My works</h2>
+			<div class="work-list">
+				<div class="work-list-inside">
+					<div class="work-single" data-work="micepage">
+						<div class="work-single-svg-wrapper">
+							<svg class="hexagone work-single-svg" data-solohexa="1">
+								<clipPath id="workmask">
+									<polygon class="hexagone-in"/>
+								</clipPath>
+								<!-- <a xlink:href="http://beta.micepage.com/" class="work-link" target="_blank"> -->
+									<polygon class="hexagone-in work-single-hexa"/>
+									<image class="work-image" xlink:href="images/works/micepage.jpg" clip-path="url(#workmask)"/>
+									<polygon class="hexagone-in work-mask"/>
+									<text class="work-title" text-anchor="middle">Micepage</text>
+								<!-- </a> -->
+							</svg>
+						</div>
+					</div><!--
+					--><div class="work-single" data-work="virtualvendors">
+						<div class="work-single-svg-wrapper">
+							<svg class="hexagone work-single-svg" data-solohexa="1">
+								<!-- <a xlink:href="http://virtualvendors.com.au/" class="work-link" target="_blank"> -->
+									<polygon class="hexagone-in work-single-hexa"/>
+									<image class="work-image" xlink:href="images/works/virtualvendors.jpg" clip-path="url(#workmask)"/>
+									<polygon class="hexagone-in work-mask"/>
+									<text class="work-title" text-anchor="middle">Virtual Vendors</text>
+								<!-- </a> -->
+							</svg>
+						</div>
+					</div><!--
+					--><div class="work-single" data-work="capchya">
+						<div class="work-single-svg-wrapper">
+							<svg class="hexagone work-single-svg" data-solohexa="1">
+								<!-- <a xlink:href="http://cap-dev.built.digital/" class="work-link" target="_blank"> -->
+									<polygon class="hexagone-in work-single-hexa"/>
+									<image class="work-image" xlink:href="images/works/capchya.jpg" clip-path="url(#workmask)"/>
+									<polygon class="hexagone-in work-mask"/>
+									<text class="work-title" text-anchor="middle">Capchya</text>
+								<!-- </a> -->
+							</svg>
+						</div>
+					</div><!--
+					--><div class="work-single" data-work="creativeoasis">
+						<div class="work-single-svg-wrapper">
+							<svg class="hexagone work-single-svg" data-solohexa="1">
+								<!-- <a xlink:href="http://creativeoasis.com.au/" class="work-link" target="_blank"> -->
+									<polygon class="hexagone-in work-single-hexa"/>
+									<image class="work-image" xlink:href="images/works/creativeoasis.jpg" clip-path="url(#workmask)"/>
+									<polygon class="hexagone-in work-mask"/>
+									<text class="work-title" text-anchor="middle">Creative Oasis</text>
+								<!-- </a> -->
+							</svg>
+						</div>
+					</div><!--
+					--><div class="work-single" data-work="built">
+						<div class="work-single-svg-wrapper">
+							<svg class="hexagone work-single-svg" data-solohexa="1">
+								<!-- <a xlink:href="http://built.digital/" class="work-link" target="_blank"> -->
+									<polygon class="hexagone-in work-single-hexa"/>
+									<image class="work-image" xlink:href="images/works/built.jpg" clip-path="url(#workmask)"/>
+									<polygon class="hexagone-in work-mask"/>
+									<text class="work-title" text-anchor="middle">Built.Digital</text>
+								<!-- </a> -->
+							</svg>
+						</div>
+					</div><!--
+					--><div class="work-single" data-work="esport">
+						<div class="work-single-svg-wrapper">
+							<svg class="hexagone work-single-svg" data-solohexa="1">
+								<!-- <a xlink:href="http://beta.micepage.com/" class="work-link" target="_blank"> -->
+									<polygon class="hexagone-in work-single-hexa"/>
+									<image class="work-image" xlink:href="images/works/esport.jpg" clip-path="url(#workmask)"/>
+									<polygon class="hexagone-in work-mask"/>
+									<text class="work-title" text-anchor="middle">Esport Betting</text>
+								<!-- </a> -->
+							</svg>
+						</div>
+					</div><!--
+					--><div class="work-single" data-work="huntedyard">
+						<div class="work-single-svg-wrapper">
+							<svg class="hexagone work-single-svg" data-solohexa="1">
+								<!-- <a xlink:href="http://test.thehuntedyard.com.au/" class="work-link" target="_blank"> -->
+									<polygon class="hexagone-in work-single-hexa"/>
+									<image class="work-image" xlink:href="images/works/huntedyard.jpg" clip-path="url(#workmask)"/>
+									<polygon class="hexagone-in work-mask"/>
+									<text class="work-title" text-anchor="middle">The Hunted Yard</text>
+								<!-- </a> -->
+							</svg>
+						</div>
+					</div><!--
+					--><div class="work-single" data-work="awj">
+						<div class="work-single-svg-wrapper">
+							<svg class="hexagone work-single-svg" data-solohexa="1">
+								<!-- <a xlink:href="http://awj.com.au/" class="work-link" target="_blank"> -->
+									<polygon class="hexagone-in work-single-hexa"/>
+									<image class="work-image" xlink:href="images/works/awj.jpg" clip-path="url(#workmask)"/>
+									<polygon class="hexagone-in work-mask"/>
+									<text class="work-title" text-anchor="middle">AWJ</text>
+								<!-- </a> -->
+							</svg>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="work-details-wrapper">
+				<div class="work-details">
+					<div class="work-background-video-wrapper">
+						<video class="work-background-video" autoplay loop>
+							<source class="video-mp4" src="" type="video/mp4"/>
+						</video>
+					</div>
+					<div class="work-details-left">
+						<h2 class="section-title work-title">Micepage</h2>
+						<ul class="work-infos">
+							<li>Subject: <span class="work-subject"></span></li>
+							<li>Team members: <span class="work-team"></span></li>
+							<li>Technologies: <span class="work-techno"></span></li>
+						</ul>
+						<a href="" target="_blank" class="button button-white work-link">See the website</a>
+					</div><!-- 
+					--><div class="work-details-right">
+						<p><strong>Project details:</strong></p>
+						<p class="work-description"></p>
+					</div>
+				</div>
+				<svg class="hexagone work-arrowdown">
+					<polygon class="hexagone-in"/>
+				</svg>
+			</div>
+		</section>
+		<section class="hundredsection"></section>
 		<div class="intro-loading">
 			<div class="loader-wrapper">
 				<svg class="hexagone loader">
