@@ -352,8 +352,8 @@ jQuery(document).ready(function($) {
 		var $videoplayer = $workdetails.find('.work-background-video');
 		$videoplayer.hide();
 		$videoplayer.get(0).load();
-		$videoplayer.get(0).play();
-		$videoplayer.get(0).onplay = function(){
+		$videoplayer.get(0).oncanplaythrough = function(){
+			$videoplayer.get(0).play();
 			$videoplayer.show();
 		};
 		$('.work-details-wrapper').addClass('active');
