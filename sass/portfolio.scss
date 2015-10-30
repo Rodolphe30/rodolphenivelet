@@ -64,7 +64,7 @@
 				transition-duration: 0.5s;
       			transform-style: preserve-3d;
 				.work-single-hexa{
-					fill: #000;
+					fill: #FFF;
 					stroke: #FFF;
 					stroke-width: 2px;
 				}
@@ -137,6 +137,7 @@
 				width: 100%;
 				height: 100%;
 				background-image: url(../images/video-pattern.png);
+				background-size: 2px 2px;
 			}
 			.work-background-video{
 				position: absolute;

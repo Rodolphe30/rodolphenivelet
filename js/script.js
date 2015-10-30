@@ -142,102 +142,102 @@ jQuery(document).ready(function($) {
 		"photoshop": {
 			"title": "Photoshop CC",
 			"level": "Expert",
-			"desc": "Angular"
+			"desc": "My program of choice for all designs and photo editings.<br/><br/>I have always worked on photoshop but I am lately thinking about switching to Sketch or Illustrator for webdesigning."
 		},
 		"angular": {
 			"title": "Angular.js",
 			"level": "Intermediate",
-			"desc": "Angular"
+			"desc": "Angular.js created by Google is a JavaScript library that helps you create Ajax driven web applications.<br/><br/>Combined with Typescript, Angular 2 becomes a really powerfull and maintainable front-end JS library."
 		},
 		"html": {
 			"title": "HTML 5",
 			"level": "Expert",
-			"desc": "Angular"
+			"desc": "HTML 5 in the base fondation of every single project I work on.<br/><br/>After dealing with it for those past 5 year, I now consider myself as a veterant with it. HTML does not have any secret for me anymore."
 		},
 		"css": {
 			"title": "CSS 3",
 			"level": "Expert",
-			"desc": "Angular"
+			"desc": "CSS 3 is a not missable part of web development. It allows you to bring life to an HTML structure.<br/><br/>After years of using it, I now know all type of little techniques and tips of CSS, experience thats keeps growing everyday as you will never know everything about CSS.<br/><br/>Over the years I have learned to slowly get rid of jQuery to exploit better CSS3 animations."
 		},
 		"js": {
 			"title": "JavaScript",
 			"level": "Mastered",
-			"desc": "Angular"
+			"desc": "JavaScript is simply the future of web and maybe other domains in general.<br/><br/>How the code work makes it one of the fastest programation langage in both front-end and back-end sides.<br/><br/>The AJAX driven system such as angular.js or backbone.js are huge and more and more interesting.<br/><br/>It takes a really huge place in the way I develop a website but I still have much to learn."
 		},
 		"gulp": {
 			"title": "Gulp",
 			"level": "Intermediate",
-			"desc": "Angular"
+			"desc": "Gulp is brand new workflow enhancer. Those kind of programs are kind of trendy lately as we see more and more of those start-ups trying to enhance developers and teams workflow.<br/><br/>Here I have putted gulp but I also know Grunt and other of those."
 		},
 		"agile": {
 			"title": "Agile Methodology",
 			"level": "Intermediate",
-			"desc": "Angular"
+			"desc": "During the time I have worked in Australia, the philosophy has completely changed. We went to a waterfall methodology to an agile methodology.<br/><br/>We directly saw the results has the communication with clients, the respect of deadlines and the quality of our outcomes were immediatly improved."
 		},
 		"ajax": {
 			"title": "AJAX JS",
 			"level": "Intermediate",
-			"desc": "Angular"
+			"desc": "Nowaday, AJAX takes a big importance in the way we think about front-end. Instead of refreching everything on each query, we now focus on the information that needs to be changed.<br/><br/>This is really game changer and we need to consider it as the future of front-end."
 		},
 		"jquery": {
 			"title": "jQuery",
 			"level": "Expert",
-			"desc": "Angular"
+			"desc": "Even if jQuery is a bit outdated, it still has a big role to play in website development has it makes life so much easier.<br/><br/>The purists will always go with native javascript, but I think the time you save by using jQuery can not be overlooked."
 		},
 		"sass": {
 			"title": "SASS",
 			"level": "Mastered",
-			"desc": "Angular"
+			"desc": "Like I was saying before I am lazy, that is why I am using tools like SASS or LESS for my project.<br/><br/>It is easier, more permissive, faster, and more maintainable. Their is no point of developing in native when you can use those kind of tools."
 		},
 		"php": {
 			"title": "php",
 			"level": "Intermediate",
-			"desc": "Angular"
+			"desc": "PHP is one of the most popular back-end langage when you are building a web platform.<br/><br/>I know msot of it and have used it to build back-end applications using the MVC structure."
 		},
 		"github": {
 			"title": "Git and version control",
 			"level": "Mastered",
-			"desc": "Angular"
+			"desc": "When you talk about project management and team working, you can not overlook Git.<br/><br/>This piece of genius allows members of a team to develop together at different places without disturbing each others.<br/><br/>Git also allows you to control your application by being able to go back on old versions of it.<br/><br/>Git is purely unavoidable and I personaly use it on every projects (even solo ones)."
 		},
 		"photo": {
 			"title": "Photography",
 			"level": "Passion",
-			"desc": "Angular"
+			"desc": "For those pasts 5 years I have discovered myself a new hobbit which is the photography.<br/><br/>This helps me expend the design and artistic part of me to a whole new level."
 		},
 		"responsive": {
 			"title": "Responsive design / Mobile first",
 			"level": "Expert",
-			"desc": "Angular"
+			"desc": "Nowaday of you think about building a website, you immediatly have to think about mobile. More than 50% of the market is now on mobile devices.<br/><br/>The way a develop and design my website is always focused on either responsive design or mobile first."
 		},
 		"svg": {
 			"title": "SVG",
 			"level": "Mastered",
-			"desc": "Angular"
+			"desc": "With the expension of all the retina displays and 4K displays, font icons, SVG and other technologies are stating to take a huge place in website development, even though we still have compatibility problems."
 		},
 		"aftereffect": {
 			"title": "After Effect CC",
 			"level": "Intermediate",
-			"desc": "Angular"
+			"desc": "I really love video editing and FX. I still have a medium level if after effect but this is something I do has a hobbit."
 		},
 		"premiere": {
 			"title": "Premiere CC",
 			"level": "Mastered",
-			"desc": "Angular"
+			"desc": "Premiere is one of many video mounting and cutting program I have used.<br/><br/>I use it a lot on my spare time for some video projects."
 		},
 		"seo": {
 			"title": "Search Engine Optimisation",
 			"level": "Mastered",
-			"desc": "Angular"
+			"desc": "As a front-end developer, SEO is the subject that interest me the most.<br/><br/>I have done some SEO analysis for clients I was working for in order to increase their natural ranking mainly on Google."
 		},
 		"illustrator": {
 			"title": "Illustrator CC",
 			"level": "Mastered",
-			"desc": "Angular"
+			"desc": "I use Illustrator mainly for the creation of icons and logos. Photoshop is not self sufficient and Illustrator is the perfect complement.<br/><br/>I have also used it to design few websites has a complete vectorial tool has sketch is doing on mac."
 		},
 		"bootstrap": {
 			"title": "Bootstrap CSS",
 			"level": "Expert",
-			"desc": "Angular"
+			"desc": "Bootstrap has been the most popular CSS framework for those past few years. I am using it a lot but now only for its responsive power but also for its power combined with SASS and its reset which is Normalize.css"
 		}
 	}
 
