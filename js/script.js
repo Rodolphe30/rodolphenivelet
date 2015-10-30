@@ -349,9 +349,13 @@ jQuery(document).ready(function($) {
 		$workdetails.find('.work-description').html(workinfoin['desc']);
 		$workdetails.find('.work-link').attr('href',workinfoin['link']);
 		$workdetails.find('.video-mp4').attr('src','images/videos/mp4/'+ worksubject +'.mp4');
-		var $videoplayer = $workdetails.find('.work-background-video').get(0);
-		$videoplayer.load();
-		$videoplayer.play();
+		var $videoplayer = $workdetails.find('.work-background-video');
+		$videoplayer.hide();
+		$videoplayer.get(0).load();
+		$videoplayer.get(0).play();
+		$videoplayer.get(0).onplay = function(){
+			$videoplayer.show();
+		};
 		$('.work-details-wrapper').addClass('active');
 		workopened = true;
 	}
