@@ -6582,12 +6582,21 @@ svg.mask {
           stroke: #FFF; }
         .nav-slide-container .nav-slide .nav-hexa .scrollto.active text {
           fill: #FFF; }
-        .nav-slide-container .nav-slide .nav-hexa .scrollto .hexagone-in {
+        .nav-slide-container .nav-slide .nav-hexa .scrollto.active:hover .hexagone-in {
+          fill: #5a5a5a;
+          stroke-width: 2px;
+          stroke: #FFF; }
+        .nav-slide-container .nav-slide .nav-hexa .scrollto.active:hover text {
           fill: #FFF; }
+        .nav-slide-container .nav-slide .nav-hexa .scrollto .hexagone-in {
+          stroke-width: 2px;
+          fill: #FFF;
+          stroke: #FFF; }
         .nav-slide-container .nav-slide .nav-hexa .scrollto text {
           fill: #414141; }
         .nav-slide-container .nav-slide .nav-hexa .scrollto:hover .hexagone-in {
-          fill: #e6e6e6; }
+          fill: #e6e6e6;
+          stroke: #e6e6e6; }
         .nav-slide-container .nav-slide .nav-hexa .scrollto:hover text {
           fill: #414141; }
     .nav-slide-container .nav-slide .nav-deco {

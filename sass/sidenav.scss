@@ -54,9 +54,21 @@
           text{
             fill: #FFF;
           }
+          &:hover{
+            .hexagone-in{
+              fill: lighten($black, 10%);
+              stroke-width: 2px;
+              stroke: #FFF;
+            }
+            text{
+              fill: #FFF;
+            }
+          }
         }
         .hexagone-in{
+          stroke-width: 2px;
           fill: #FFF;
+          stroke: #FFF;
         }
         text{
           fill: $black;
@@ -64,6 +76,7 @@
         &:hover{
           .hexagone-in{
             fill: darken(#FFF, 10%);
+            stroke: darken(#FFF, 10%);
           }
           text{
             fill: $black;
