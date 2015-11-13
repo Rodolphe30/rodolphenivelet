@@ -20,6 +20,7 @@ jQuery(document).ready(function($) {
 		$('.hexagone').each(function(index, el) {
 			var $hex = $(this);
 			var ecart = $hex.data('ecart');
+			var datawidth = $hex.data('width');
 			var hexwidth = $hex.width();
 			var hexheight;
 			if ($hex.data('solohexa') == 1) {
@@ -33,7 +34,6 @@ jQuery(document).ready(function($) {
 			$hexin.each(function(index, el) {
 				var $hexinthis = $(this);
 				var hexinwidth = hexwidth;
-				var datawidth = $hexinthis.data('width');
 				if (datawidth != null) {
 					hexinwidth = datawidth;
 				}
@@ -96,11 +96,11 @@ jQuery(document).ready(function($) {
 			}
 		}
 		else{
-			$('.aboutme-section .my-face-container').css('transform', 'translateY(0px) scale(1, 1)');
+			$('.aboutme-section .my-face-container').css('transform', '');
 		}
 		$('.before-section').each(function(index, el) {
 			var $beforesec = $(this);
-			if (scrollTop+$win.height() > $beforesec.offset().top + $beforesec.height() - 10) {
+			if (scrollTop+$win.height() > $beforesec.offset().top + $beforesec.height() - 10 || scrollTop > $beforesec.offset().top) {
 				$beforesec.removeClass('before-section').addClass('before-anim');
 				setTimeout(function(){
 					$beforesec.removeClass('before-anim');
@@ -132,7 +132,7 @@ jQuery(document).ready(function($) {
 	});
 
 	$('.hamburger').click(function(event) {
-		$('.hamburger, .nav-slide-container').toggleClass('opened');
+		$('body').toggleClass('menuopened');
 		$('.nav-slide-container').removeClass('first');
 	});
 
@@ -275,15 +275,15 @@ jQuery(document).ready(function($) {
 			"subject": "Event organiser for businesses",
 			"team": "4 members, designer, 2 front-end and 1 back-end dev",
 			"techno": "Angular.js / Laravel",
-			"desc": "Angular",
-			"link": "http://beta.micepage.com/"
+			"desc": "Micepage is an Angular.js based web application for businesses to create and manage events.<br/>My role in this project was to develop with the help of another angular developer, all the front-end interface and functionalities. I also had to take care or the email templates and PDF generation.",
+			"link": "http://www.micepage.com/"
 		},
 		"virtualvendors": {
 			"title": "Virtual Vendors",
 			"subject": "Online real estate agency for australians",
 			"team": "3 members, designer, front-end and back-end devs",
 			"techno": "Angular.js / Laravel",
-			"desc": "Angular",
+			"desc": "On this project I took care of all the front-end integration to make sure the website was pixel perfectly respecting the design.<br/><br/>Virtual Vendors in an online platform for Australians to sell, buy and rent properties.",
 			"link": "http://virtualvendors.com.au/"
 		},
 		"capchya": {
@@ -291,7 +291,7 @@ jQuery(document).ready(function($) {
 			"subject": "Online platform to store and share photos and videos",
 			"team": "3 members, designer, front-end and back-end devs",
 			"techno": "Angular.js / Laravel",
-			"desc": "Angular",
+			"desc": "On Capchya I was in charge of the front-end interface. My goal was to animate the website based on my creativity and to follow the design perfectly.<br/><br/>Capchya is an online platform for sharing your photos and videos with people related to it.",
 			"link": "http://cap-dev.built.digital/"
 		},
 		"creativeoasis": {
@@ -299,7 +299,7 @@ jQuery(document).ready(function($) {
 			"subject": "Australian creative agency website",
 			"team": "2 members, designer and front-end dev",
 			"techno": "Wordpress",
-			"desc": "Angular",
+			"desc": "This is the Creative Oasis official website. Creative Oasis is a content marketing company working in Australia.<br/><br/>I created all the the system starting from front-end to wordpress functionalities.",
 			"link": "http://creativeoasis.com.au/"
 		},
 		"built": {
@@ -307,7 +307,7 @@ jQuery(document).ready(function($) {
 			"subject": "My own australian web agency website",
 			"team": "2 members, designer and front-end dev",
 			"techno": "Angular.js",
-			"desc": "Angular",
+			"desc": "For our own digital agency website, I have created all the system with angular and the classic front-end technologies.",
 			"link": "http://built.digital/"
 		},
 		"esport": {
@@ -315,7 +315,7 @@ jQuery(document).ready(function($) {
 			"subject": "Betting platform for online game competitions",
 			"team": "2 members, designer and front-end dev",
 			"techno": "jQuery",
-			"desc": "Angular",
+			"desc": "This is my favorite personal project of mine. Unfortunatly this project have not been finished for legal problems as betting have strict rules (particularely in France).",
 			"link": "http://beta.micepage.com/"
 		},
 		"huntedyard": {
@@ -323,15 +323,15 @@ jQuery(document).ready(function($) {
 			"subject": "Event organisers website",
 			"team": "2 members, designer and front-end dev",
 			"techno": "Wordpress",
-			"desc": "Angular",
-			"link": "http://test.thehuntedyard.com.au/"
+			"desc": "Just a simple but fancy wordpress website I have been developing for one of my client in Australia.",
+			"link": "http://www.thehuntedyard.com.au/"
 		},
 		"awj": {
 			"title": "AWJ Civil",
 			"subject": "An australian construction company website",
 			"team": "2 members, designer and front-end dev",
 			"techno": "Wordpress / AJAX",
-			"desc": "Angular",
+			"desc": "This big Australian constructing company asked us to build their new website after they have been relying on their old one for years.<br/>The result is fancy and simple. The client and users love it.",
 			"link": "http://awj.com.au/"
 		}
 	}
@@ -404,3 +404,54 @@ jQuery(document).ready(function($) {
 	});
 
 });
+
+
+
+
+
+
+// (function() {
+
+// 	var model = {
+// 		init: function() {
+// 			this.user = {
+// 				name: '',
+// 				bio '',
+// 			}
+// 		},
+
+// 		getUser: function() {
+// 			return this.user;
+// 		}
+// 	};
+
+// 	var controller = {
+// 		init: function() {
+// 			model.init();
+// 			view.init();
+// 		},
+
+// 		getUser: function() {
+// 			return model.getUser();
+// 		}
+
+// 		calcMehtods function() {
+// 		},
+
+// 	};
+
+// 	var view = {
+// 		init: function() {
+// 			this.nameElem = document.getElemenById('#name');
+// 			this.render();
+// 		},
+
+// 		render: function() {
+// 			var user = controller.getUser();
+// 			this.nameElemn.html = user.name;
+// 		},
+// 	};
+
+// 	controler.init();
+// });
+
