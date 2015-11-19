@@ -11,7 +11,11 @@
 		padding: 0 120px;
 	}
 	.work-list-inside{
+		width: 100%;
+		margin: 0 auto;
 		white-space: nowrap;
+		transition-duration: 1.3s;
+		transition-delay:0.7s;
 		&:hover,&.active{
 			.work-single{
 				width: 10%;
@@ -193,8 +197,8 @@
 			opacity: 0;
 		}
 		.work-list-inside{
+			width: 0%;
 			.work-single{
-				width: 0%;
 				.work-single-svg{
 					transform: rotateY(96.9deg) scale(0.8, 0.8);
 				}
@@ -204,10 +208,7 @@
 	&.before-anim{
 		.work-list-inside{
 			.work-single{
-				transition-duration: 1.3s;
-				transition-delay:0.7s;
 				.work-single-svg{
-					transition-duration: 1.3s;
 					transition-delay:0.7s;
 				}
 			}

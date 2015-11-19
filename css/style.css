@@ -3447,46 +3447,20 @@ input[type="button"].btn-block {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg); } }
 
-@-webkit-keyframes loader {
-  0% {
-    stroke-dasharray: 0 0 1 1000; }
-  50% {
-    stroke-dasharray: 0 0 348 1000; }
-  100% {
-    stroke-dasharray: 0 346 348 1000; } }
-
-@keyframes loader {
-  0% {
-    stroke-dasharray: 0 0 1 1000; }
-  50% {
-    stroke-dasharray: 0 0 348 1000; }
-  100% {
-    stroke-dasharray: 0 346 348 1000; } }
-
 @-webkit-keyframes loader2 {
   0% {
-    stroke-dasharray: 0 0 1 116; }
-  33% {
-    stroke-dasharray: 0 0 57 59;
     stroke-dashoffset: 0; }
-  67% {
-    stroke-dasharray: 0 0 57 59;
+  50% {
     stroke-dashoffset: -58; }
   100% {
-    stroke-dasharray: 0 0 1 116;
     stroke-dashoffset: -116; } }
 
 @keyframes loader2 {
   0% {
-    stroke-dasharray: 0 0 1 116; }
-  33% {
-    stroke-dasharray: 0 0 57 59;
     stroke-dashoffset: 0; }
-  67% {
-    stroke-dasharray: 0 0 57 59;
+  50% {
     stroke-dashoffset: -58; }
   100% {
-    stroke-dasharray: 0 0 1 116;
     stroke-dashoffset: -116; } }
 
 @-webkit-keyframes coolanimations {
@@ -3917,6 +3891,14 @@ blockquote {
   z-index: 10000;
   opacity: 0;
   transition: 0.5s; }
+  .intro-loading .loading-text {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    padding-top: 80px; }
   .intro-loading .loader-wrapper {
     position: absolute;
     top: 50%;
@@ -3929,9 +3911,10 @@ blockquote {
       stroke-width: 10px;
       stroke: #414141;
       fill: transparent;
-      stroke-dasharray: 0 0 0 1000;
-      -webkit-animation: loader2 2s ease infinite;
-              animation: loader2 2s ease infinite; }
+      stroke-dasharray: 0 0 57 59;
+      -webkit-animation: loader2 1.2s ease infinite;
+              animation: loader2 1.2s ease infinite;
+      stroke-linecap: square; }
 
 .nav-slide-container {
   -webkit-perspective: 500;
@@ -4343,7 +4326,11 @@ blockquote {
   .portfolio-section .work-list {
     padding: 0 120px; }
   .portfolio-section .work-list-inside {
-    white-space: nowrap; }
+    width: 100%;
+    margin: 0 auto;
+    white-space: nowrap;
+    transition-duration: 1.3s;
+    transition-delay: 0.7s; }
     .portfolio-section .work-list-inside:hover .work-single, .portfolio-section .work-list-inside.active .work-single {
       width: 10%; }
     .portfolio-section .work-list-inside:hover .work-single.active {
@@ -4497,20 +4484,17 @@ blockquote {
     -webkit-transform: translateY(30px);
             transform: translateY(30px);
     opacity: 0; }
-  .portfolio-section.before-section .work-list-inside .work-single {
+  .portfolio-section.before-section .work-list-inside {
     width: 0%; }
     .portfolio-section.before-section .work-list-inside .work-single .work-single-svg {
       -webkit-transform: rotateY(96.9deg) scale(0.8, 0.8);
               transform: rotateY(96.9deg) scale(0.8, 0.8); }
-  .portfolio-section.before-anim .work-list-inside .work-single {
-    transition-duration: 1.3s;
+  .portfolio-section.before-anim .work-list-inside .work-single .work-single-svg {
     transition-delay: 0.7s; }
-    .portfolio-section.before-anim .work-list-inside .work-single .work-single-svg {
-      transition-duration: 1.3s;
-      transition-delay: 0.7s; }
 
 .experience-section {
-  border-top: 2px solid #414141; }
+  border-top: 2px solid #414141;
+  border-bottom: 2px solid #414141; }
   .experience-section .experience-inside {
     position: relative; }
     .experience-section .experience-inside .section-title {
@@ -4558,12 +4542,20 @@ blockquote {
   .experience-section.before-section .experience-inside .experience-hexa {
     stroke-dasharray: 0 484 0; }
 
+.contact-section {
+  background-color: #FFF;
+  text-align: center;
+  padding: 50px 0; }
+  .contact-section .social-link {
+    color: #414141;
+    font-size: 34px;
+    margin: 0 5px; }
+
 .footer-global {
   font-family: Helvetica, Arial, sans-serif;
   padding: 10px 0;
   text-align: center;
   background-color: #f5f5f5;
-  border-top: 2px solid #414141;
   color: #959595;
   font-size: 12px; }
 

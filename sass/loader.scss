@@ -10,6 +10,15 @@
   z-index: 10000;
   opacity: 0;
   transition: 0.5s;
+  .loading-text{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    padding-top: 80px;
+  }
   .loader-wrapper{
     position: absolute;
     top: 50%;
@@ -23,8 +32,9 @@
       stroke-width:10px;
       stroke: $black;
       fill: transparent;
-      stroke-dasharray: 0 0 0 1000;
-      animation: loader2 2s ease infinite;
+      stroke-dasharray: 0 0 57 59;
+      animation: loader2 1.2s ease infinite;
+      stroke-linecap:square;
     }
   }
 }

@@ -28,32 +28,14 @@
   }
 }
 
-@keyframes loader{
-  0%{
-    stroke-dasharray: 0 0 1 1000;
-  }
-  50%{
-    stroke-dasharray: 0 0 348 1000;
-  }
-  100%{
-    stroke-dasharray: 0 346 348 1000;
-  }
-}
-
 @keyframes loader2{
   0%{
-    stroke-dasharray: 0 0 1 116;
-  }
-  33%{
-    stroke-dasharray: 0 0 57 59;
     stroke-dashoffset: 0;
   }
-  67%{
-    stroke-dasharray: 0 0 57 59;
+  50%{
     stroke-dashoffset: -58;
   }
   100%{
-    stroke-dasharray: 0 0 1 116;
     stroke-dashoffset: -116;
   }
 }
