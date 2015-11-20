@@ -3536,6 +3536,9 @@ svg {
 
 .hundredsection {
   min-height: 500px; }
+  @media (max-width: 47.99em) {
+    .hundredsection {
+      height: auto !important; } }
 
 .section-title {
   font-weight: 700;
@@ -3562,7 +3565,7 @@ blockquote {
   transition: 1.5s ease 2s;
   opacity: 1; }
   .site-header .header-left {
-    position: fixed;
+    position: absolute;
     z-index: 100;
     float: left;
     top: 20px;
@@ -3852,6 +3855,9 @@ blockquote {
     font-size: 36px;
     font-weight: 700;
     margin-bottom: 40px; }
+    @media (max-width: 47.99em) {
+      .cover-section .cover-section-quote {
+        font-size: 28px; } }
     .cover-section .cover-section-quote::before, .cover-section .cover-section-quote::after {
       content: '"'; }
   .cover-section .arrowdown {
@@ -3941,6 +3947,9 @@ blockquote {
             transform-origin: 100% 50%;
     -webkit-transform-style: preserve-3d;
             transform-style: preserve-3d; }
+    @media (max-width: 47.99em) {
+      .nav-slide-container .nav-slide {
+        padding-top: 140px; } }
     .nav-slide-container .nav-slide .nav-hexa {
       width: 100%;
       height: 450px; }
@@ -4096,6 +4105,20 @@ blockquote {
     opacity: 1;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%); }
+    @media (max-width: 65.32333em) {
+      .aboutme-section .aboutme-content {
+        -webkit-transform: translateY(0%);
+                transform: translateY(0%);
+        bottom: 40px;
+        width: 100%;
+        left: 0;
+        right: 0;
+        top: initial;
+        padding: 0 40px; } }
+    @media (max-width: 47.99em) {
+      .aboutme-section .aboutme-content {
+        position: static;
+        padding: 20px; } }
     .aboutme-section .aboutme-content .aboutme-text {
       position: relative;
       overflow: hidden; }
@@ -4148,6 +4171,14 @@ blockquote {
     opacity: 1;
     transition: opacity 1s ease 1.5s, left 1s ease 2s, margin 1s ease 2s;
     overflow: visible; }
+    @media (max-width: 65.32333em) {
+      .aboutme-section .my-face-container {
+        top: 280px;
+        left: 50%;
+        margin-left: -100px; } }
+    @media (max-width: 47.99em) {
+      .aboutme-section .my-face-container {
+        display: none; } }
   .aboutme-section .my-face {
     width: 200px;
     height: 200px;
@@ -4185,33 +4216,37 @@ blockquote {
         -webkit-transform-origin: 186px 50%;
                 transform-origin: 186px 50%;
         transition-delay: 1.2s; }
-  .aboutme-section.before-section .aboutme-content {
-    -webkit-transform: translateY(-45%);
-            transform: translateY(-45%);
-    opacity: 0; }
-    .aboutme-section.before-section .aboutme-content .aboutme-text .aboutme-mask {
-      height: 110%; }
-  .aboutme-section.before-section .my-face-container {
-    position: fixed;
-    -webkit-transform: translateY(-200px) scale(0.6, 0.6);
-            transform: translateY(-200px) scale(0.6, 0.6);
-    left: 50%;
-    margin-left: -100px; }
-  .aboutme-section.before-section .my-face .content-container {
-    opacity: 0; }
-    .aboutme-section.before-section .my-face .content-container.topleft {
-      -webkit-transform: rotate3d(-1.73, 1, 0, 180deg);
-              transform: rotate3d(-1.73, 1, 0, 180deg); }
-    .aboutme-section.before-section .my-face .content-container.bottomleft {
-      -webkit-transform: rotate3d(1.73, 1, 0, 180deg);
-              transform: rotate3d(1.73, 1, 0, 180deg); }
-    .aboutme-section.before-section .my-face .content-container.right {
-      -webkit-transform: rotate3d(0, -1, 0, 180deg);
-              transform: rotate3d(0, -1, 0, 180deg); }
+  @media (min-width: 48em) {
+    .aboutme-section.before-section .aboutme-content {
+      -webkit-transform: translateY(-45%);
+              transform: translateY(-45%);
+      opacity: 0; }
+      .aboutme-section.before-section .aboutme-content .aboutme-text .aboutme-mask {
+        height: 110%; }
+    .aboutme-section.before-section .my-face-container {
+      position: fixed;
+      -webkit-transform: translateY(-200px) scale(0.6, 0.6);
+              transform: translateY(-200px) scale(0.6, 0.6);
+      left: 50%;
+      margin-left: -100px; }
+    .aboutme-section.before-section .my-face .content-container {
+      opacity: 0; }
+      .aboutme-section.before-section .my-face .content-container.topleft {
+        -webkit-transform: rotate3d(-1.73, 1, 0, 180deg);
+                transform: rotate3d(-1.73, 1, 0, 180deg); }
+      .aboutme-section.before-section .my-face .content-container.bottomleft {
+        -webkit-transform: rotate3d(1.73, 1, 0, 180deg);
+                transform: rotate3d(1.73, 1, 0, 180deg); }
+      .aboutme-section.before-section .my-face .content-container.right {
+        -webkit-transform: rotate3d(0, -1, 0, 180deg);
+                transform: rotate3d(0, -1, 0, 180deg); } }
 
 .skills-section {
   background-color: #FFF;
   position: relative; }
+  @media (max-width: 47.99em) {
+    .skills-section {
+      display: none; } }
   .skills-section .skill-description {
     position: absolute;
     top: 50%;
@@ -4324,7 +4359,10 @@ blockquote {
     transition: 1s;
     opacity: 1; }
   .portfolio-section .work-list {
-    padding: 0 120px; }
+    padding: 30px 120px; }
+    @media (max-width: 47.99em) {
+      .portfolio-section .work-list {
+        padding: 60px 70px; } }
   .portfolio-section .work-list-inside {
     width: 100%;
     margin: 0 auto;
@@ -4345,6 +4383,13 @@ blockquote {
       position: relative;
       height: 300px;
       cursor: pointer; }
+      @media (max-width: 47.99em) {
+        .portfolio-section .work-list-inside .work-single {
+          display: block;
+          height: 100px;
+          width: 100% !important; }
+          .portfolio-section .work-list-inside .work-single.active {
+            height: 200px; } }
       .portfolio-section .work-list-inside .work-single:hover, .portfolio-section .work-list-inside .work-single.active {
         width: 30%; }
         .portfolio-section .work-list-inside .work-single:hover .work-single-svg, .portfolio-section .work-list-inside .work-single.active .work-single-svg {
@@ -4372,6 +4417,10 @@ blockquote {
         transition-duration: 0.5s;
         -webkit-transform-style: preserve-3d;
                 transform-style: preserve-3d; }
+        @media (max-width: 47.99em) {
+          .portfolio-section .work-list-inside .work-single .work-single-svg {
+            -webkit-transform: rotateX(-30deg) scale(0.8, 0.8);
+                    transform: rotateX(-30deg) scale(0.8, 0.8); } }
         .portfolio-section .work-list-inside .work-single .work-single-svg .work-single-hexa {
           fill: #FFF;
           stroke: #FFF;
@@ -4416,7 +4465,8 @@ blockquote {
     left: 0;
     right: 0;
     color: #FFF;
-    text-align: left; }
+    text-align: left;
+    background-color: #333; }
     .portfolio-section .work-details .work-background-video-wrapper {
       position: absolute;
       top: 0;
@@ -4495,12 +4545,18 @@ blockquote {
 .experience-section {
   border-top: 2px solid #414141;
   border-bottom: 2px solid #414141; }
+  @media (max-width: 47.99em) {
+    .experience-section {
+      padding: 30px 0; } }
   .experience-section .experience-inside {
     position: relative; }
     .experience-section .experience-inside .section-title {
       position: absolute;
       right: 40px;
       top: 40px; }
+      @media (max-width: 47.99em) {
+        .experience-section .experience-inside .section-title {
+          position: static; } }
   .experience-section .experience-line {
     position: absolute;
     left: 200px;
@@ -4511,11 +4567,20 @@ blockquote {
     background-color: #414141;
     transition-duration: 2.6s;
     transition-timing-function: linear; }
+    @media (max-width: 65.32333em) {
+      .experience-section .experience-line {
+        left: 100px; } }
+    @media (max-width: 47.99em) {
+      .experience-section .experience-line {
+        display: none; } }
   .experience-section .experience-svg {
     width: 140px;
     position: absolute;
     left: 0;
     top: 60px; }
+    @media (max-width: 47.99em) {
+      .experience-section .experience-svg {
+        display: none; } }
   .experience-section .experience-hexa {
     fill: #FFF;
     stroke: #414141;
@@ -4525,18 +4590,31 @@ blockquote {
     transition-timing-function: linear; }
   .experience-section .experience-contents {
     padding-left: 132px; }
+    @media (max-width: 65.32333em) {
+      .experience-section .experience-contents {
+        padding-left: 32px; } }
+    @media (max-width: 47.99em) {
+      .experience-section .experience-contents {
+        padding: 0; } }
     .experience-section .experience-contents .experience-content {
       padding-left: 200px;
       padding-right: 300px;
       position: relative;
-      padding-top: 30px;
-      padding-bottom: 30px; }
+      padding-top: 50px;
+      padding-bottom: 50px; }
       .experience-section .experience-contents .experience-content:nth-child(1) .experience-hexa {
         transition-delay: 0.3s; }
       .experience-section .experience-contents .experience-content:nth-child(2) .experience-hexa {
         transition-delay: 1.1s; }
       .experience-section .experience-contents .experience-content:nth-child(3) .experience-hexa {
         transition-delay: 1.9s; }
+      @media (max-width: 47.99em) {
+        .experience-section .experience-contents .experience-content {
+          padding: 20px; } }
+  .experience-section .experience-image {
+    max-width: 120px;
+    max-height: 120px;
+    margin-top: 10px; }
   .experience-section.before-section .experience-inside .experience-line {
     height: 0%; }
   .experience-section.before-section .experience-inside .experience-hexa {

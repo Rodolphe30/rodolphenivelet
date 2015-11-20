@@ -8,7 +8,11 @@
 		opacity: 1;
 	}
 	.work-list{
-		padding: 0 120px;
+		padding: 30px 120px;
+		@include mq($until: tablet){
+			padding: 60px 70px;
+
+		}
 	}
 	.work-list-inside{
 		width: 100%;
@@ -37,6 +41,14 @@
 			position: relative;
 			height: 300px;
 			cursor: pointer;
+			@include mq($until: tablet){
+				display: block;
+				height: 100px;
+				width: 100%!important;
+				&.active{
+					height: 200px;
+				}
+			}
 			&:hover,&.active{
 				width: 30%;
 				.work-single-svg{
@@ -65,6 +77,9 @@
 				width: 240px;
 				margin-left: -120px;
 				transform: rotateY(30deg) scale(0.8, 0.8);
+				@include mq($until: tablet){
+					transform: rotateX(-30deg) scale(0.8, 0.8);
+				}
 				transition-duration: 0.5s;
       			transform-style: preserve-3d;
 				.work-single-hexa{
@@ -122,6 +137,7 @@
 		right: 0;
 		color: #FFF;
 		text-align: left;
+		background-color: #333;
 		.work-background-video-wrapper{
 			position: absolute;
 			top: 0;

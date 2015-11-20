@@ -1,17 +1,26 @@
 .experience-section{
 	border-top: 2px solid $black;
 	border-bottom: 2px solid $black;
+	@include mq($until: tablet){
+		padding: 30px 0;
+	}
 	.experience-inside{
 		position: relative;
 		.section-title{
 			position: absolute;
 			right: 40px;
 			top: 40px;
+			@include mq($until: tablet){
+				position: static;
+			}
 		}
 	}
 	.experience-line{
 		position: absolute;
 		left: 200px;
+		@include mq($until: desktop){
+			left: 100px;
+		}
 		top: 0;
 		bottom: 0;
 		height: 100%;
@@ -19,12 +28,18 @@
 		background-color: $black;
 		transition-duration: 2.6s;
 		transition-timing-function: linear;
+		@include mq($until: tablet){
+			display: none;
+		}
 	}
 	.experience-svg{
 		width: 140px;
 		position: absolute;
 		left: 0;
 		top: 60px;
+		@include mq($until: tablet){
+			display: none;
+		}
 	}
 	.experience-hexa{
 		fill: #FFF;
@@ -36,16 +51,30 @@
 	}
 	.experience-contents{
 		padding-left: 132px;
+		@include mq($until: desktop){
+			padding-left:32px;
+		}
+		@include mq($until: tablet){
+			padding: 0;
+		}
 		.experience-content{
 			padding-left: 200px;
 			padding-right: 300px;
 			position: relative;
-			padding-top: 30px;
-			padding-bottom: 30px;
+			padding-top: 50px;
+			padding-bottom: 50px;
 			&:nth-child(1) .experience-hexa{transition-delay: 0.3s;}
 			&:nth-child(2) .experience-hexa{transition-delay: 1.1s;}
 			&:nth-child(3) .experience-hexa{transition-delay: 1.9s;}
+			@include mq($until: tablet){
+				padding: 20px;
+			}
 		}
+	}
+	.experience-image{
+		max-width: 120px;
+		max-height: 120px;
+		margin-top: 10px;
 	}
 	&.before-section{
 		.experience-inside{

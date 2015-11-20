@@ -2,7 +2,7 @@
   transition: 1.5s ease 2s;
   opacity: 1;
   .header-left{
-    position: fixed;
+    position: absolute;
     z-index:100;
     float: left;
     top: 20px;

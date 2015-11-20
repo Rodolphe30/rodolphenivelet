@@ -54,6 +54,9 @@ svg{
 
 .hundredsection{
   min-height: 500px;
+  @include mq($until: tablet){
+    height: auto!important;
+  }
 }
 
 .section-title{

@@ -1,6 +1,9 @@
 .skills-section{
 	background-color: #FFF;
 	position: relative;
+	@include mq($until: tablet){
+		display: none;
+	}
 	.skill-description{
 		position: absolute;
 		top: 50%;

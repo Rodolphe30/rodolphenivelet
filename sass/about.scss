@@ -6,6 +6,19 @@
     top: 50%;
     right: 0;
     width: 50%;
+    @include mq($until: desktop){
+      transform: translateY(0%);
+      bottom: 40px;
+      width: 100%;
+      left: 0;
+      right: 0;
+      top: initial;
+      padding: 0 40px;
+    }
+    @include mq($until: tablet){
+      position: static;
+      padding: 20px;
+    }
     padding-right: 50px;
     transition: 1s ease 2.2s;
     opacity: 1;
@@ -58,6 +71,14 @@
     position: absolute;
     top: 50%;
     left: 50px;
+    @include mq($until: desktop){
+      top: 280px;
+      left: 50%;
+      margin-left:-100px;
+    }
+    @include mq($until: tablet){
+      display: none;
+    }
     transform: translateY(0) scale(1,1);
     margin-left:85px;
     margin-top:-100px;
@@ -107,33 +128,35 @@
       }
     }
   }
-  &.before-section{
-    .aboutme-content{
-      transform: translateY(-45%);
-      opacity: 0;
-      .aboutme-text{
-        .aboutme-mask{
-          height: 110%;
+  @include mq($from: tablet){
+    &.before-section{
+      .aboutme-content{
+        transform: translateY(-45%);
+        opacity: 0;
+        .aboutme-text{
+          .aboutme-mask{
+            height: 110%;
+          }
         }
       }
-    }
-    .my-face-container{
-      position: fixed;
-      transform: translateY(-200px) scale(0.6,0.6);
-      left: 50%;
-      margin-left:-100px;
-    }
-    .my-face{
-      .content-container{
-        opacity: 0;
-        &.topleft{
-          transform: rotate3d(-1.73, 1, 0, 180deg);
-        }
-        &.bottomleft{
-          transform: rotate3d(1.73, 1, 0, 180deg);
-        }
-        &.right{
-          transform: rotate3d(0, -1, 0, 180deg);
+      .my-face-container{
+        position: fixed;
+        transform: translateY(-200px) scale(0.6,0.6);
+        left: 50%;
+        margin-left:-100px;
+      }
+      .my-face{
+        .content-container{
+          opacity: 0;
+          &.topleft{
+            transform: rotate3d(-1.73, 1, 0, 180deg);
+          }
+          &.bottomleft{
+            transform: rotate3d(1.73, 1, 0, 180deg);
+          }
+          &.right{
+            transform: rotate3d(0, -1, 0, 180deg);
+          }
         }
       }
     }

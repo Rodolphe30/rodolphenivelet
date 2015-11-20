@@ -137,6 +137,9 @@
   }
   .cover-section-quote{
     font-size: 36px;
+    @include mq($until: tablet){
+      font-size: 28px;
+    }
     font-weight: 700;
     margin-bottom: 40px;
     &::before,&::after{

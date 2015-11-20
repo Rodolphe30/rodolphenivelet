@@ -16,6 +16,9 @@
     background-color: $black;
     border-left: 1px solid $light;
     padding-top: 200px;
+    @include mq($until: tablet){
+      padding-top: 140px;
+    }
     transform: rotateY(-90deg);
     transform-origin: 100% 50%;
     transform-style: preserve-3d;
