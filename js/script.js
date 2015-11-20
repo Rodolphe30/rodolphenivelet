@@ -7,19 +7,29 @@ jQuery(document).ready(function($) {
 
 	var $win = $(window);
 
-	// $win.bind("load", function() {
-	// 	$('body').removeClass('intro');
-	// 	setTimeout(function(){
-	// 		$('.intro-loading').remove();
-	// 	},500);
-	// });
-
-	setTimeout(function(){
+	function removeIntro(){
 		$('body').removeClass('intro');
 		setTimeout(function(){
 			$('.intro-loading').remove();
 		},1000);
+	}
+
+	var twosec = false;
+	var loaded = false;
+
+	setTimeout(function(){
+		twosec = true;
+		if (loaded) {
+			removeIntro();
+		}
 	},2000);
+
+	$win.bind("load", function() {
+		loaded = true;
+		if (twosec) {
+			removeIntro();
+		}
+	});
 
 	function responsive(){
 		$('.hundredsection').outerHeight($win.height());
