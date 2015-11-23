@@ -6,6 +6,10 @@
     top: 50%;
     right: 0;
     width: 50%;
+    padding-right: 50px;
+    transition: 1s ease 2.2s;
+    opacity: 1;
+    transform: translateY(-50%);
     @include mq($until: desktop){
       transform: translateY(0%);
       bottom: 40px;
@@ -19,10 +23,6 @@
       position: static;
       padding: 20px;
     }
-    padding-right: 50px;
-    transition: 1s ease 2.2s;
-    opacity: 1;
-    transform: translateY(-50%);
     .aboutme-text{
       position: relative;
       overflow: hidden;
@@ -162,4 +162,3 @@
     }
   }
 }
-
