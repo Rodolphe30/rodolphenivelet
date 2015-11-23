@@ -218,7 +218,7 @@ jQuery(document).ready(function($) {
 		"photo": {
 			"title": "Photography",
 			"level": "Passion",
-			"desc": "For those pasts 5 years I have discovered myself a new hobbit which is the photography.<br/><br/>This helps me expend the design and artistic part of me to a whole new level."
+			"desc": "For those pasts 5 years I have discovered myself a new hobby which is the photography.<br/><br/>This helps me expend the design and artistic part of me to a whole new level."
 		},
 		"responsive": {
 			"title": "Responsive design / Mobile first",
