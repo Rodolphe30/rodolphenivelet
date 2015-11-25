@@ -84,6 +84,12 @@ blockquote{
   }
 }
 
+a.disabled {
+	pointer-events: none;
+	opacity: 0.4;
+	cursor: default;
+}
+
 
 @import 'header';
 @import 'cover';
@@ -96,4 +102,3 @@ blockquote{
 @import 'experience';
 @import 'contact';
 @import 'footer';
-
