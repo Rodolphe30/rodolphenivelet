@@ -255,7 +255,7 @@ jQuery(document).ready(function($) {
 			"level": "Expert",
 			"desc": "Bootstrap has been the most popular CSS framework for those past few years. I am using it a lot but now only for its responsive power but also for its power combined with SASS and its reset which is Normalize.css"
 		}
-	}
+	};
 
 	function skillhover(skill,position){
 		var skillinfoin = skillinfos[skill];
@@ -350,7 +350,7 @@ jQuery(document).ready(function($) {
 			"desc": "This big Australian constructing company asked us to build their new website after they have been relying on their old one for years.<br/>The result is fancy and simple. The client and users love it.",
 			"link": "http://awj.com.au/"
 		}
-	}
+	};
 
 	var workopened = false;
 
@@ -412,15 +412,18 @@ jQuery(document).ready(function($) {
 		$('body,html').animate({
 			scrollTop: section
 		},800,functionAfter);
+
 	}
 
 
 
 	$('.scrollto').click(function(event) {
 		var $self = $(this);
-		event.preventDefault();
 		var hash = $self.data('scrollto');
 		var scrollToSection = $(hash).offset().top;
+    console.log(hash);
+    ga('send', 'event', 'Navigation', 'Scroll To', hash);
+    event.preventDefault();
 		var functionAfter = function(){
 			window.location = hash;
 		}
@@ -429,15 +432,44 @@ jQuery(document).ready(function($) {
 
 
 	// GA Tracking code
-	$('.french-cv').click(function() {
-		ga('send', 'event', 'Download', 'PDF', 'cv/fr/RodolpheNivelet-CV.pdf');
+	$('.cv-download-btn').click(function(event) {
+
+		ga('send', 'event', 'Download', 'PDF', $(this).attr('href'));
+
+	});
+
+
+  $('.social-link').click(function(event) {
+
+		ga('send', 'event', 'Link', 'Social', $(this).attr('href'));
+
+	});
+
+  $('.mail-send-btn').click(function(event) {
+
+    ga('send', 'event', 'Contact', 'Email', 'Rodolphe.Nivelet@gmail.com');
+
+  });
+
+  $('.see-website-btn').click(function(event) {
+
+		ga('send', 'event', 'Link', 'Website', $(this).attr('href'));
+
+	});
+
+  $('.hamburger').click(function(event) {
+
+    var label = 'Open';
+
+    if ($('body').hasClass('menuopened')) {
+      label = 'Close';
+    }
+
+    ga('send', 'event', 'Navigation', 'Menu', label);
+
 	});
 
 });
-
-
-
-
 
 
 // (function() {
