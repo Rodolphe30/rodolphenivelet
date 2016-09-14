@@ -56,7 +56,7 @@
       &:nth-child(22){transition-delay:2.2s;}
     }
     .coolstuff-wrapper{
-      opacity: 1;
+      opacity: 0;
       animation-name: coolanimationopacity;
       animation-timing-function: linear;
       animation-iteration-count: infinite;
@@ -66,7 +66,8 @@
         fill: transparent;
         stroke: $black;
         stroke-width:5px;
-        stroke-dasharray: 0 0 0 1000;
+        stroke-dasharray: 0 0 1 1000;
+        stroke-dashoffset: 0;
         stroke-linecap: round;
         animation-name: coolanimations;
         animation-duration: 4s;
@@ -77,41 +78,41 @@
         animation-delay: 3s;
         animation-duration: 6s;
         .coolstuff{
-          animation-delay: 10s;
+          animation-delay: 3s;
         }
       }
       &.n2{
-        animation-delay: 2s;
+        animation-delay: 7s;
         animation-duration: 5s;
         .coolstuff{
-          animation-delay: 8s;
+          animation-delay: 7s;
         }
       }
       &.n3{
-        animation-delay: 4s;
+        animation-delay: 9s;
         animation-duration: 10s;
         .coolstuff{
           animation-delay: 9s;
         }
       }
       &.n4{
-        animation-delay: 7s;
+        animation-delay: 11s;
         animation-duration: 7s;
         .coolstuff{
           animation-delay: 11s;
-          animation-direction:reverse;
+          animation-direction: reverse;
         }
       }
       &.n5{
-        animation-delay: 3s;
+        animation-delay: 1s;
         animation-duration: 4s;
         .coolstuff{
-          animation-delay: 12s;
-          animation-direction:reverse;
+          animation-delay: 1s;
+          animation-direction: reverse;
         }
       }
       &.n6{
-        animation-delay: 7s;
+        animation-delay: 5s;
         animation-duration: 14s;
         .coolstuff{
           animation-delay: 5s;

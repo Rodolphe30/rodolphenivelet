@@ -43,9 +43,7 @@
 		}
 		.skill-single{
 			opacity: 1;
-			transition-property: opacity, transform;
-			transition-duration: 0.3s, 0.6s;
-			transition-timing-function: ease;
+			transition: transform 0.6s ease;
 			cursor: pointer;
 			transform-origin: 50% 50%;
 			transform: scale(1,1);
@@ -70,7 +68,7 @@
 					stroke-dashoffset: -29;
 					stroke-dasharray: 58 58 58 58 58 58 1000;
 				}
-				.hexaskill-image{	
+				.hexaskill-image{
 					transform: scale(1, 1);
 				}
 			}
@@ -97,37 +95,37 @@
 		.design,.programation{
 			.skill-single{
 				&:nth-child( 1){
-					transition-delay: 0s, 1.5s;
+					transition-delay: 1.5s;
 				}
 				&:nth-child( 2){
-					transition-delay: 0s, 0.8s;
+					transition-delay: 0.8s;
 				}
 				&:nth-child( 3){
-					transition-delay: 0s, 0.6s;
+					transition-delay: 0.6s;
 				}
 				&:nth-child( 4){
-					transition-delay: 0s, 0.9s;
+					transition-delay: 0.9s;
 				}
 				&:nth-child( 5){
-					transition-delay: 0s, 2s;
+					transition-delay: 2s;
 				}
 				&:nth-child( 6){
-					transition-delay: 0s, 1.2s;
+					transition-delay: 1.2s;
 				}
 				&:nth-child( 7){
-					transition-delay: 0s, 1.6s;
+					transition-delay: 1.6s;
 				}
 				&:nth-child( 8){
-					transition-delay: 0s, 1.9s;
+					transition-delay: 1.9s;
 				}
 				&:nth-child( 9){
-					transition-delay: 0s, 1.3s;
+					transition-delay: 1.3s;
 				}
 				&:nth-child(10){
-					transition-delay: 0s, 1s;
+					transition-delay: 1s;
 				}
 				&:nth-child(11){
-					transition-delay: 0s, 1.4s;
+					transition-delay: 1.4s;
 				}
 			}
 		}
@@ -136,6 +134,9 @@
 		.skillssvg{
 			.skill-single{
 				transform: scale(0,0);
+				.hexaskill-image{
+					transform: scale(1, 1);
+				}
 			}
 		}
 	}
