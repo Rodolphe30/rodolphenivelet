@@ -22,21 +22,21 @@
 		transition-delay:0.7s;
 		&:hover,&.active{
 			.work-single{
-				width: 10%;
+				width: 9%;
 			}
 		}
 		&:hover{
 			.work-single.active{
-				width: 10%;
+				width: 9%;
 				&:hover{
-					width: 30%;
+					width: 28%;
 				}
 			}
 		}
 		.work-single{
 			display: inline-block;
 			vertical-align: middle;
-			width: 12.5%;
+			width: 11.1111%;
 			transition: 0.5s;
 			position: relative;
 			height: 300px;
@@ -50,7 +50,7 @@
 				}
 			}
 			&:hover,&.active{
-				width: 30%;
+				width: 28%;
 				.work-single-svg{
 					transform: rotateY(0deg) scale(1, 1);
 					.work-mask{

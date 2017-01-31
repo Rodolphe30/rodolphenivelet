@@ -161,8 +161,8 @@ jQuery(document).ready(function($) {
 			"desc": "My program of choice for all designs and photo editings.<br/><br/>I have always worked on photoshop but I am lately thinking about switching to Sketch or Illustrator for webdesigning."
 		},
 		"angular": {
-			"title": "Angular.js",
-			"level": "Intermediate",
+			"title": "Angular",
+			"level": "Expert",
 			"desc": "Angular.js created by Google is a JavaScript library that helps you create Ajax driven web applications.<br/><br/>Combined with Typescript, Angular 2 becomes a really powerfull and maintainable front-end JS library."
 		},
 		"html": {
@@ -176,13 +176,13 @@ jQuery(document).ready(function($) {
 			"desc": "CSS 3 is a not missable part of web development. It allows you to bring life to an HTML structure.<br/><br/>After years of using it, I now know all type of little techniques and tips of CSS, experience thats keeps growing everyday as you will never know everything about CSS.<br/><br/>Over the years I have learned to slowly get rid of jQuery to exploit better CSS3 animations."
 		},
 		"js": {
-			"title": "JavaScript",
-			"level": "Mastered",
+			"title": "JavaScript / ES6",
+			"level": "Expert",
 			"desc": "JavaScript is simply the future of web and maybe other domains in general.<br/><br/>How the code work makes it one of the fastest programation langage in both front-end and back-end sides.<br/><br/>The AJAX driven system such as angular.js or backbone.js are huge and more and more interesting.<br/><br/>It takes a really huge place in the way I develop a website but I still have much to learn."
 		},
 		"gulp": {
 			"title": "Gulp",
-			"level": "Intermediate",
+			"level": "Mastered",
 			"desc": "Gulp is brand new workflow enhancer. Those kind of programs are kind of trendy lately as we see more and more of those start-ups trying to enhance developers and teams workflow.<br/><br/>Here I have putted gulp but I also know Grunt and other of those."
 		},
 		"agile": {
@@ -202,7 +202,7 @@ jQuery(document).ready(function($) {
 		},
 		"sass": {
 			"title": "SASS",
-			"level": "Mastered",
+			"level": "Expert",
 			"desc": "Like I was saying before I am lazy, that is why I am using tools like SASS or LESS for my project.<br/><br/>It is easier, more permissive, faster, and more maintainable. Their is no point of developing in native when you can use those kind of tools."
 		},
 		"php": {
@@ -250,10 +250,20 @@ jQuery(document).ready(function($) {
 			"level": "Mastered",
 			"desc": "I use Illustrator mainly for the creation of icons and logos. Photoshop is not self sufficient and Illustrator is the perfect complement.<br/><br/>I have also used it to design few websites has a complete vectorial tool has sketch is doing on mac."
 		},
+		"typescript": {
+			"title": "TypeScript",
+			"level": "Intermediate",
+			"desc": "TypeScript in a strong new JavaScript clean compiler language created by Microsoft.<br><br>TypeScript is a typed superset of JavaScript that compiles to plain JavaScript."
+		},
 		"bootstrap": {
 			"title": "Bootstrap CSS",
 			"level": "Expert",
 			"desc": "Bootstrap has been the most popular CSS framework for those past few years. I am using it a lot but now only for its responsive power but also for its power combined with SASS and its reset which is Normalize.css"
+		},
+		"protractor": {
+			"title": "Protractor / e2e testing",
+			"level": "Mastered",
+			"desc": "Protractor is an end-to-end test framework for AngularJS applications.<br><br>Protractor runs tests against your application running in a real browser, interacting with it as a user would."
 		}
 	};
 
@@ -286,6 +296,14 @@ jQuery(document).ready(function($) {
 
 
 	var workinfos = {
+		"hubscore": {
+			"title": "Hub Score",
+			"subject": "CRM for businesses",
+			"team": "4 members, designer, front-end, back-end dev and project manager",
+			"techno": "Angular.js / Symfony 2",
+			"desc": "Hub Score is a CRM plateform to store datas, manpulate a clean those datas, segments it to finaly be abble to send custom messages.<br>Those messages are sent through email, SMS, voice messages...",
+			"link": "http://www.hub-score.com/"
+		},
 		"micepage": {
 			"title": "Micepage",
 			"subject": "Event organiser for businesses",
